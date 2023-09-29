@@ -1,0 +1,21 @@
+<!-- app/views/items/index.html.erb -->
+<h1>Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.item_name %></td>
+        <td><%= item.description %></td>
+        <td><%= item.price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
